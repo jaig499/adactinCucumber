@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11881514200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has to be there in adactin.com login page",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_be_there_in_adactin_com_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "To verify user can able to fill the details and to book a hotel",
+        "description": "",
+        "id": "to-validate-the-login-and-booking-functionality-of-adactin.com;to-verify-user-can-able-to-fill-the-details-and-to-book-a-hotel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8258529200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User has to login with valid username and password",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_login_with_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1177142400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has to fill the details asked",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_fill_the_details_asked()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4819169100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User has to click the search button",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167591000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User has to click the hotel which they want to select",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_click_the_hotel_which_they_want_to_select()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3641669700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User has to enter the continue button",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_enter_the_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1669381100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User has to fil the payment details",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_fil_the_payment_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Jaiganesh",
+                  "P",
+                  "45, string street, Dublin. Ireland",
+                  "1234567891234567",
+                  "404"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126621200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User has to click the booknow button",
+            "match": {
+              "location": "StepdefenitionClass.user_has_to_click_the_booknow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8224262000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User must be able to get the Order number in hand",
+            "match": {
+              "location": "StepdefenitionClass.user_must_be_able_to_get_the_Order_number_in_hand()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@booking"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Login and Booking functionality of adactin.com",
+    "description": "",
+    "id": "to-validate-the-login-and-booking-functionality-of-adactin.com",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featureFile/LoginAndBooking.feature",
+    "tags": []
+  }
+]
