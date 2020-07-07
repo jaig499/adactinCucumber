@@ -25,6 +25,9 @@ public class POJOClass extends BaseClass {
 
 	@FindBy(name="Submit")
 	private WebElement search;
+	
+	@FindBy(id="order_id_text")
+	private WebElement Orderid;
 
 	public WebElement getUN() {
 		return UN;
@@ -42,4 +45,7 @@ public class POJOClass extends BaseClass {
 		return search;
 	}
 
+	public WebElement getOrderid() {
+		return Orderid;
+	}
 }

@@ -4,9 +4,9 @@
   <artifactId>AdactinCucuWithBSandPOJO</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <dependencies>
+ <dependencies>
   
-     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
@@ -43,6 +43,11 @@
     <version>4.11.2</version>
 </dependency>
 
+ <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.8-beta4</version>
+</dependency>
   
   </dependencies>
 </project>

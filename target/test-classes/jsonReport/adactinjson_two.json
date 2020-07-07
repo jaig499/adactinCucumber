@@ -3,154 +3,118 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
+        "line": 2,
+        "name": "To verify user can able to cancel the booking order",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11881514200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User has to be there in adactin.com login page",
-            "match": {
-              "location": "StepdefenitionClass.user_has_to_be_there_in_adactin_com_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 15,
-        "name": "To verify user can able to fill the details and to book a hotel",
-        "description": "",
-        "id": "to-validate-the-login-and-booking-functionality-of-adactin.com;to-verify-user-can-able-to-fill-the-details-and-to-book-a-hotel",
+        "id": "to-validate-hotel-cancelling-functionality;to-verify-user-can-able-to-cancel-the-booking-order",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8258529200,
+              "duration": 16893054400,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User has to login with valid username and password",
+            "line": 4,
+            "name": "User has to be there on adactin login page",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_login_with_valid_username_and_password()"
+              "location": "CancellingOrderStepdefenition.user_has_to_be_there_on_adactin_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1338014100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User has to click on Booked Itinerary",
+            "match": {
+              "location": "CancellingOrderStepdefenition.user_has_to_click_on_Booked_Itinerary()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1177142400,
+              "duration": 1503793800,
               "status": "passed"
             },
-            "line": 18,
-            "name": "User has to fill the details asked",
+            "line": 6,
+            "name": "User has to copy and paste the order Id in search order ID",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_fill_the_details_asked()"
+              "location": "CancellingOrderStepdefenition.user_has_to_copy_and_paste_the_order_Id_in_search_order_ID()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4819169100,
+              "duration": 1187646900,
               "status": "passed"
             },
-            "line": 19,
-            "name": "User has to click the search button",
+            "line": 7,
+            "name": "User has to click on go",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_click_the_search_button()"
+              "location": "CancellingOrderStepdefenition.user_has_to_click_on_go()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 167591000,
+              "duration": 151454900,
               "status": "passed"
             },
-            "line": 20,
-            "name": "User has to click the hotel which they want to select",
+            "line": 8,
+            "name": "User need to click on check box for cancelling an order",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_click_the_hotel_which_they_want_to_select()"
+              "location": "CancellingOrderStepdefenition.user_need_to_click_on_check_box_for_cancelling_an_order()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3641669700,
+              "duration": 156387900,
               "status": "passed"
             },
-            "line": 21,
-            "name": "User has to enter the continue button",
+            "line": 9,
+            "name": "User need to click on Cancel Selected button",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_enter_the_continue_button()"
+              "location": "CancellingOrderStepdefenition.user_need_to_click_on_Cancel_Selected_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1669381100,
+              "duration": 41012200,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User has to fil the payment details",
+            "line": 10,
+            "name": "User need to handle the pop up to selecting either OK or Cancel",
             "match": {
-              "location": "StepdefenitionClass.user_has_to_fil_the_payment_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Jaiganesh",
-                  "P",
-                  "45, string street, Dublin. Ireland",
-                  "1234567891234567",
-                  "404"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 126621200,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User has to click the booknow button",
-            "match": {
-              "location": "StepdefenitionClass.user_has_to_click_the_booknow_button()"
+              "location": "CancellingOrderStepdefenition.user_need_to_handle_the_pop_up_to_selecting_either_OK_or_Cancel()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 8224262000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat org.stepdefenition.CancellingOrderStepdefenition.user_should_be_navigated_back_to_Booked_Itinerary_page(CancellingOrderStepdefenition.java:96)\r\n\tat ✽.User should be navigated back to Booked Itinerary page(src/test/resources/featureFile/CancellingHotelBooking.feature:11)\r\n",
+              "duration": 1251493100,
+              "status": "failed"
             },
-            "line": 25,
-            "name": "User must be able to get the Order number in hand",
+            "line": 11,
+            "name": "User should be navigated back to Booked Itinerary page",
             "match": {
-              "location": "StepdefenitionClass.user_must_be_able_to_get_the_Order_number_in_hand()"
+              "location": "CancellingOrderStepdefenition.user_should_be_navigated_back_to_Booked_Itinerary_page()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@booking"
           }
         ]
       }
     ],
-    "name": "To validate the Login and Booking functionality of adactin.com",
+    "name": "To validate hotel cancelling functionality",
     "description": "",
-    "id": "to-validate-the-login-and-booking-functionality-of-adactin.com",
+    "id": "to-validate-hotel-cancelling-functionality",
     "keyword": "Feature",
-    "uri": "src/test/resources/featureFile/LoginAndBooking.feature",
+    "uri": "src/test/resources/featureFile/CancellingHotelBooking.feature",
     "tags": []
   }
 ]

@@ -8,12 +8,15 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\featureFile\\LoginAndBooking.feature",
+@CucumberOptions(features="src\\test\\resources\\featureFile\\CancellingHotelBooking.feature",
 				 monochrome=true,
 				 dryRun=false,
 				 glue="org.stepdefenition",
-				 plugin="json:src\\test\\resources\\jsonReport\\adactinjson_two.json",
-				 tags= {"@booking"}
+				 plugin= {"json:src\\test\\resources\\jsonReport\\adactinjson_two.json",
+						  "rerun:src\\test\\resources\\failedTest\\failed.txt"
+						 }
+				
+		
 				)
 public class TestRunnerClass {
 	
